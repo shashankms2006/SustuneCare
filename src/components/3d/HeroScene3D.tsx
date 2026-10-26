@@ -176,7 +176,7 @@ const handleTouchEnd = () => {
 
         {/* Sparsh Healthcare Card */}
         <div
-          className="absolute bottom-15 right-1 w-[215px] sm:bottom-6 sm:right- sm:-right-20 sm:w-[290px] rounded-xl sm:rounded-3xl p-2.5 sm:p-4 bg-white/90 backdrop-blur-xl border border-emerald-200/90 shadow-[0_15px_35px_rgba(10,135,84,0.18)] preserve-3d animate-float-reverse cursor-pointer hover:border-[#0A8754] transition-all"
+          className="absolute bottom-15 right-1 w-[215px] sm:bottom-6 sm:right- sm:-right-11 sm:w-[290px] rounded-xl sm:rounded-3xl p-2.5 sm:p-4 bg-white/90 backdrop-blur-xl border border-emerald-200/90 shadow-[0_15px_35px_rgba(10,135,84,0.18)] preserve-3d animate-float-reverse cursor-pointer hover:border-[#0A8754] transition-all"
           style={{ transform: 'translateZ(90px)' }}
           onClick={() => onOpenConsultModal?.('sparsh')}
         >
@@ -234,15 +234,15 @@ const handleTouchEnd = () => {
 
         {/* Clinical Command SLA Badge */}
         <div
-          className="absolute top-[210px] right-3 max-w-[155px] sm:top-14 sm:right-6 sm:max-w-none px-2 sm:px-3 py-1.5 rounded-xl bg-[#051326]/90 border border-[#C99738]/50 text-white backdrop-blur-md shadow-xl flex items-center gap-1.5 sm:gap-2 preserve-3d"
+          className="absolute bottom-[160px] left-9 max-w-[155px] sm:bottom-37 sm:left-6 sm:max-w-none px-2 sm:px-3 py-1.5 rounded-xl bg-white/95 border border-sky-200 text-[#0D3B66] backdrop-blur-md shadow-xl flex items-center gap-1.5 sm:gap-2 preserve-3d"
           style={{ transform: 'translateZ(110px)' }}
         >
           <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-ping shrink-0" />
           <div className="text-left min-w-0">
-            <span className="text-[7px] sm:text-[9px] text-amber-200 block uppercase font-bold tracking-wider">
+            <span className="text-[8px] sm:text-[9px] text-slate-500 block uppercase font-bold tracking-wider">
               Clinical Command SLA
             </span>
-            <span className="text-[9px] sm:text-xs font-extrabold font-heading text-white leading-tight block">
+            <span className="text-[10px] sm:text-xs font-extrabold font-heading text-[#0073B7] leading-tight block">
               &lt; 14 Mins SOS Dispatch
             </span>
           </div>
@@ -250,7 +250,7 @@ const handleTouchEnd = () => {
 
         {/* Assets Protected Badge */}
         <div
-          className="absolute bottom-[180px] left-3.5 max-w-[155px] sm:bottom-16 sm:left-6 sm:max-w-none px-2 sm:px-3 py-1.5 rounded-xl bg-white/95 border border-sky-200 text-[#0D3B66] backdrop-blur-md shadow-xl flex items-center gap-1.5 sm:gap-2 preserve-3d"
+          className="absolute top-[160px] right-3 max-w-[155px] sm:top-38 sm:right-6 sm:max-w-none px-2 sm:px-3 py-1.5 rounded-xl bg-white/95 border border-sky-200 text-[#0D3B66] backdrop-blur-md shadow-xl flex items-center gap-1.5 sm:gap-2 preserve-3d"
           style={{ transform: 'translateZ(105px)' }}
         >
           <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-lg bg-sky-100 flex items-center justify-center text-[#0073B7] shrink-0">

@@ -41,7 +41,7 @@ export function formatDuration(seconds: number | null | undefined): string {
  * - aegis_overview.mp4: 38s, 2160x3840 (Portrait)
  * - sparsh_overview.mp4: 46s, 2160x3840 (Portrait)
  * - sustune_launch.mp4: 22s, 2160x3840 (Portrait)
- * - testimonial_nri.mp4: 8s, 1080x1920 (Portrait)
+ * - testimonial_nri.mp4: 30s, 1080x1920 (Portrait)
  */
 export const VERIFIED_VIDEO_METADATA: Record<string, VideoMetadata> = {
   '/videos/aegis_overview.mp4': {
@@ -60,17 +60,17 @@ export const VERIFIED_VIDEO_METADATA: Record<string, VideoMetadata> = {
     isPortrait: true,
     aspectRatio: 2160 / 3840,
   },
-  '/videos/sustune_launch.mp4': {
-    duration: 22,
-    formattedDuration: '00:22',
+  '/videos/issue.mp4': {
+    duration: 42,
+    formattedDuration: '00:42',
     width: 2160,
     height: 3840,
     isPortrait: true,
     aspectRatio: 2160 / 3840,
   },
-  '/videos/testimonial_nri.mp4': {
-    duration: 8,
-    formattedDuration: '00:08',
+  '/videos/testimonial_nri2.mp4': {
+    duration: 30,
+    formattedDuration: '00:30',
     width: 1080,
     height: 1920,
     isPortrait: true,

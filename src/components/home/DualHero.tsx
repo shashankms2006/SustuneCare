@@ -11,7 +11,8 @@ import {
   TrendingUp,
   Activity,
   Lock,
-  Globe2
+  Globe2,
+  ExternalLink
 } from 'lucide-react';
 import { ServiceDivision } from '../../types';
 import { HeroScene3D } from '../3d/HeroScene3D';
@@ -92,6 +93,22 @@ export const DualHero: React.FC<DualHeroProps> = ({
             <p className="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed max-w-xl">
               Eliminating the <strong className="text-slate-900 font-bold">Anxiety of Distance</strong> for global Non-Resident Indians. Institutional-grade real estate stewardship combined with 24/7 clinical emergency and heartfelt geriatric healthcare in Bengaluru, Hyderabad, and Delhi NCR.
             </p>
+
+            {/* Quick Survey CTA Button */}
+            <div className="pt-2">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdCuTEI5h1hxB0yzlwRM-U_6RDU2JQ-FCXwimKynh4RM0IJzA/formResponse"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="A Quick Survey About You"
+                className="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold text-[#0D3B66] bg-gradient-to-r from-amber-50 via-amber-100/90 to-amber-50 border border-[#C99738]/60 hover:border-[#C99738] hover:shadow-[0_4px_16px_rgba(201,151,56,0.25)] hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer group"
+              >
+                <span className="text-base" role="img" aria-label="survey">📋</span>
+                <span className="font-extrabold tracking-tight">A Quick Survey About You</span>
+                <span className="text-base group-hover:rotate-12 transition-transform" role="img" aria-label="sparkles">✨</span>
+                <ExternalLink className="w-3.5 h-3.5 text-[#C99738] ml-0.5 opacity-80 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+              </a>
+            </div>
 
             {/* Interactive Split Switcher */}
             <div className="pt-1 flex flex-wrap items-center gap-2">

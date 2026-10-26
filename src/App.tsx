@@ -6,6 +6,7 @@ import { Footer } from './components/common/Footer';
 import { VideoModal } from './components/common/VideoModal';
 import { ConsultationModal } from './components/common/ConsultationModal';
 import { ScrollToTop } from './components/common/ScrollToTop';
+import { NriQuickDesk } from './components/common/NriQuickDesk';
 
 import { HomePage } from './pages/HomePage';
 import { AegisPage } from './pages/AegisPage';
@@ -111,6 +112,8 @@ export default function App() {
             onClose={() => setConsultModalOpen(false)}
             defaultInterest={consultModalDivision}
           />
+          {/* Global Persistent NRI Quick Desk & SOS Assistance Widget */}
+          <NriQuickDesk />
         </div>
       </BrowserRouter>
     </CurrencyProvider>

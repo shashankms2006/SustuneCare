@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Clock, Shield, Building, Phone, ArrowUpRight, CheckCircle2, Sparkles } from 'lucide-react';
+import { MapPin, Clock, Shield, Building, Phone, ArrowUpRight, CheckCircle2, Sparkles, MessageSquare } from 'lucide-react';
 import { OPERATIONAL_HUBS } from '../../data/mockData';
 
 interface HubsMapProps {
@@ -131,8 +131,8 @@ export const HubsMap: React.FC<HubsMapProps> = ({ onOpenConsultModal }) => {
                   rel="noopener noreferrer"
                   className="w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-colors flex items-center justify-center gap-2"
                 >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>Call {selectedHub.city} Concierge</span>
+                  <MessageSquare className="w-3.5 h-3.5 fill-current" />
+                  <span>Chat With {selectedHub.city} Concierge</span>
                 </a>
               </div>
             </div>

@@ -256,3 +256,26 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     scroll-behavior: auto !important;
   }
 }
+.nri-alternating-shield {
+  animation: nri-red-green-glow 1.6s ease-in-out infinite;
+}
+
+@keyframes nri-red-green-glow {
+  0%, 49% {
+    filter:
+      drop-shadow(0 0 3px #ff2638)
+      drop-shadow(0 0 9px #ff2638);
+  }
+
+  50%, 99% {
+    filter:
+      drop-shadow(0 0 3px #00e676)
+      drop-shadow(0 0 9px #00e676);
+  }
+
+  100% {
+    filter:
+      drop-shadow(0 0 3px #ff2638)
+      drop-shadow(0 0 9px #ff2638);
+  }
+}

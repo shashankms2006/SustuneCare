@@ -185,31 +185,76 @@ export const NriQuickDesk: React.FC = () => {
           </div>
         )}
 
-        {/* Collapsed State: Navy pill + Circular Shield Launcher (Matching Reference Screenshot 1) */}
-        <div className="flex items-center gap-3">
-          {/* Dark Navy Pill */}
-          <button
-            type="button"
-            onClick={() => setPanelOpen(!panelOpen)}
-            className="flex items-center gap-2.5 px-4 sm:px-5 py-2.5 rounded-full bg-[#07162C] border border-[#C99738]/40 hover:border-[#C99738] text-white shadow-[0_8px_25px_rgba(4,16,33,0.5)] hover:shadow-[0_8px_30px_rgba(201,151,56,0.3)] transition-all cursor-pointer active:scale-95"
-            aria-label="Open NRI Quick Desk"
-          >
-            <span className="w-2.5 h-2.5 rounded-full bg-[#00C853] shrink-0 shadow-[0_0_8px_#00C853]" />
-            <span className="text-xs sm:text-sm font-bold tracking-normal whitespace-nowrap">
-              NRI Quick Desk
-            </span>
-          </button>
+        
+{/* Combined Gold & Navy NRI Quick Desk Launcher */}
+<button
+  type="button"
+  onClick={() => setPanelOpen(!panelOpen)}
+  className="group relative flex flex-col items-center justify-center
+    w-[88px] h-[54px] sm:w-[100px] sm:h-[60px]
+    rounded-full p-[3.5px] cursor-pointer
+    transition-all duration-300 hover:scale-105 active:scale-95
+    select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+  style={{
+    background:
+      'linear-gradient(145deg, #FFF0A3 0%, #E5B869 22%, #9B7023 50%, #FFDF79 78%, #785212 100%)',
+    boxShadow:
+      '0 8px 24px rgba(0,0,0,0.55), 0 0 18px rgba(229,184,105,0.3), inset 0 1px 2px rgba(255,255,255,0.8)',
+  }}
+  aria-label="Toggle 24/7 NRI Emergency Response Desk"
+>
+  {/* Inner Midnight Navy Pill */}
+  <div
+    className="relative w-full h-full rounded-full flex flex-col
+      items-center justify-center gap-1 px-2 overflow-hidden"
+    style={{
+      background:
+        'radial-gradient(ellipse at 50% 15%, #14325E 0%, #091933 55%, #030C1B 100%)',
+      boxShadow:
+        'inset 0 2px 5px rgba(255,255,255,0.16), inset 0 -3px 6px rgba(0,0,0,0.75)',
+    }}
+  >
+    {/* Top Gloss */}
+    <span
+      className="absolute top-0 inset-x-3 h-1/2 rounded-t-full
+        pointer-events-none opacity-20"
+      style={{
+        background:
+          'linear-gradient(180deg, rgba(255,255,255,0.6), transparent)',
+      }}
+    />
 
-          {/* Circular Shield Emergency Button */}
-          <button
-            type="button"
-            onClick={() => setPanelOpen(!panelOpen)}
-            className="w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-[#07162C] border-2 border-[#C99738] flex items-center justify-center text-[#E5B869] shadow-[0_4px_20px_rgba(201,151,56,0.3)] hover:shadow-[0_0_25px_rgba(201,151,56,0.6)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
-            aria-label="Toggle 24/7 NRI Emergency Response Launcher"
-          >
-            <ShieldAlert className="w-6 h-6 stroke-[2.2]" />
-          </button>
-        </div>
+    {/* Shield with Alternating Red and Green Glow */}
+<div className="relative z-10 flex items-center justify-center">
+  <svg
+    className="nri-alternating-shield w-5 h-5 sm:w-6 sm:h-6"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#FFD452"
+    strokeWidth="2.2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    <line x1="12" y1="8" x2="12" y2="12" strokeWidth="2.4" />
+    <circle cx="12" cy="16" r="0.7" fill="#FFD452" stroke="#FFD452" />
+  </svg>
+</div>
+
+    {/* Centered Label */}
+    <span
+      className="relative z-10 text-[8px] sm:text-[9px]
+        font-extrabold text-white tracking-tight leading-none
+        text-center whitespace-nowrap"
+      style={{
+        textShadow: '0 1px 4px rgba(0,0,0,0.95)',
+      }}
+    >
+      NRI Quick Desk
+    </span>
+  </div>
+</button>
       </div>
 
       {/* ======================================================== */}

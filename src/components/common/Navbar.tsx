@@ -94,28 +94,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultModal }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
-          {/* Logo Branding */}
-          <Link to="/" className="flex items-center gap-3.5 group">
-            <div className="relative w-12 h-12 flex items-center justify-center bg-white rounded-2xl shadow-[0_4px_15px_rgba(201,151,56,0.15)] border border-slate-200 group-hover:border-[#C99738] transition-all p-1.5 overflow-hidden">
-              <img 
-                src="/brand/sustune_emblem_standalone.svg" 
-                alt="Sustune Care Emblem" 
-                className="w-full h-full object-contain group-hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="text-xl font-black tracking-tight text-[#0D3B66] font-heading group-hover:text-[#0073B7] transition-colors">
-                  SUSTUNE
-                </span>
-                <span className="text-xl font-black tracking-tight text-[#C99738] font-heading">
-                  CARE
-                </span>
-              </div>
-              <span className="text-[10px] tracking-wider text-slate-500 font-bold uppercase">
-                Dual-Shield NRI Stewardship
-              </span>
-            </div>
+          {/* Official full-colour logo on the light header */}
+          <Link to="/" aria-label="Sustune Care home" className="flex items-center shrink-0 group">
+            <img
+              src="/brand/sustune_logo_horizontal_lockup.svg"
+              alt="Sustune Care"
+              className="h-12 sm:h-14 w-auto max-w-[210px] sm:max-w-[260px] object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}

@@ -67,6 +67,11 @@ export const AegisPage: React.FC<AegisPageProps> = ({
 
   return (
     <div className="bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <a href="/" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-[#0D3B66] shadow-sm transition-colors hover:border-[#C99738] hover:text-[#0073B7] focus:outline-none focus:ring-2 focus:ring-[#0073B7]/30">
+          <span aria-hidden="true">←</span> Back to Home
+        </a>
+      </div>
       {/* Hero Banner with atmospheric lighting */}
       <section className="relative hero-radial-bg py-16 lg:py-24 border-b border-slate-200 overflow-hidden">
         {/* Ambient background light orbs */}
@@ -110,8 +115,44 @@ export const AegisPage: React.FC<AegisPageProps> = ({
         </div>
       </section>
 
+      {/* Short service overview: detailed information remains available below */}
+      <section aria-labelledby="aegis-overview-heading" className="py-10 sm:py-14 bg-white border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-7">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-[#0073B7]">Aegis at a glance</p>
+              <h2 id="aegis-overview-heading" className="mt-2 text-2xl sm:text-3xl font-black text-[#0D3B66] font-heading">Your property, looked after.</h2>
+              <p className="mt-2 max-w-2xl text-sm sm:text-base text-slate-600">Choose a service to explore the details, or watch the Aegis overview video above.</p>
+            </div>
+            <a href="#aegis-service-details" className="inline-flex items-center gap-2 self-start md:self-auto rounded-xl bg-[#0073B7] px-4 py-3 text-sm font-bold text-white transition hover:bg-[#0D3B66]">Explore all services <span aria-hidden="true">→</span></a>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <article className="rounded-2xl border border-sky-100 bg-sky-50/50 p-5">
+              <h3 className="font-extrabold text-[#0D3B66]">Tenant management</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600"><li>• Tenant screening</li><li>• Lease coordination</li></ul>
+              <a href="#aegis-service-details" className="mt-4 inline-flex text-sm font-bold text-[#0073B7] hover:underline">Read more →</a>
+            </article>
+            <article className="rounded-2xl border border-sky-100 bg-sky-50/50 p-5">
+              <h3 className="font-extrabold text-[#0D3B66]">Rent &amp; reporting</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600"><li>• Rent collection tracking</li><li>• Owner reporting</li></ul>
+              <a href="#aegis-service-details" className="mt-4 inline-flex text-sm font-bold text-[#0073B7] hover:underline">Read more →</a>
+            </article>
+            <article className="rounded-2xl border border-sky-100 bg-sky-50/50 p-5">
+              <h3 className="font-extrabold text-[#0D3B66]">Inspections</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600"><li>• Property condition checks</li><li>• Photo-based updates</li></ul>
+              <a href="#aegis-service-details" className="mt-4 inline-flex text-sm font-bold text-[#0073B7] hover:underline">Read more →</a>
+            </article>
+            <article className="rounded-2xl border border-sky-100 bg-sky-50/50 p-5">
+              <h3 className="font-extrabold text-[#0D3B66]">Repairs &amp; compliance</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600"><li>• Maintenance coordination</li><li>• Document assistance</li></ul>
+              <a href="#aegis-service-details" className="mt-4 inline-flex text-sm font-bold text-[#0073B7] hover:underline">Read more →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
       {/* The 5 Pillars of Aegis */}
-      <section className="py-20 lg:py-24 bg-gradient-to-b from-[#F8FAFC] via-white to-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
+      <section id="aegis-service-details" className="py-20 lg:py-24 bg-gradient-to-b from-[#F8FAFC] via-white to-[#F8FAFC] border-b border-slate-200 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#0D3B66] font-heading">
